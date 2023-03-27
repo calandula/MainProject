@@ -5,11 +5,7 @@ package mainproject;
 
 public class App {
     public String getGreeting() {
-        return "Hello World!0";
-    }
-
-    public String getGreeting2() {
-        return "Hello World!0";
+        return "Hello World!";
     }
 
     public static void main(String[] args) {
