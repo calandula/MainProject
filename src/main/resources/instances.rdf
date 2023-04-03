@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:qrapids="http://www.semanticweb.org/adria/ontologies/2023/1/qrapids-ontology-2#"
+         xmlns:um="http://www.semanticweb.org/adria/ontologies/2023/3/untitled-ontology-25#">
+
+  <qrapids:CategorizedObject rdf:about="http://example.org/categorizedobject1">
+    <qrapids:hasCategory rdf:resource="http://example.org/category1"/>
+    <qrapids:hasWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</qrapids:hasWeight>
+  </qrapids:CategorizedObject>
+
+  <qrapids:Category rdf:about="http://example.org/category1">
+    <qrapids:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Category 1</qrapids:hasName>
+  </qrapids:Category>
+
+  <qrapids:CategoryItem rdf:about="http://example.org/categoryitem1">
+    <qrapids:hasCategory rdf:resource="http://example.org/category1"/>
+    <qrapids:hasItem rdf:resource="http://example.org/categorizedobject1"/>
+  </qrapids:CategoryItem>
+
+  <qrapids:DataSource rdf:about="http://example.org/datasource1">
+    <qrapids:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Source 1</qrapids:hasName>
+  </qrapids:DataSource>
+
+  <qrapids:Membership rdf:about="http://example.org/membership1">
+    <qrapids:hasMember rdf:resource="http://example.org/student1"/>
+    <qrapids:belongsTo rdf:resource="http://example.org/project1"/>
+  </qrapids:Membership>
+
+  <qrapids:Metric rdf:about="http://example.org/metric1">
+    <qrapids:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metric 1</qrapids:hasName>
+    <qrapids:hasDataSource rdf:resource="http://example.org/datasource1"/>
+    <qrapids:hasWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8</qrapids:hasWeight>
+  </qrapids:Metric>
+
+  <qrapids:Product rdf:about="http://example.org/product1">
+    <qrapids:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Product 1</qrapids:hasName>
+  </qrapids:Product>
+  
+</rdf:RDF>
